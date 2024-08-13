@@ -1,0 +1,198 @@
+---
+title: "구해줘 남Q의 홈"
+author: "whaleshark"
+format: 
+  dashboard:
+    logo: move.gif
+    nav-buttons:
+      - reddit
+      - icon: gitlab
+        href: https://github.com/nebuss/LSbigdata-project1
+---
+
+
+# 의뢰인정보
+###  테스트1 {.tabset}
+
+```{python}
+import plotly.express as px
+import pandas as pd
+
+# 데이터 로드
+penguins = pd.read_csv('data/penguins.csv')
+
+from itables import show
+show(penguins, buttons = ['copy', 'excel', 'pdf'])
+
+
+```
+
+::: {.card title="My Title"}
+카드안에 ㄷ들어있는 텍스트입니다.
+![팔머펭귄](penguins.png)
+:::
+
+
+## Row {height=70%}
+
+```{python}
+import plotly.express as px
+import pandas as pd
+import numpy as np
+
+
+penguins = pd.read_csv('data/penguins.csv')
+penguins.head()
+
+fig = px.scatter(
+    penguins,
+    x="bill_length_mm",
+    y="bill_depth_mm",
+    color="species",
+    size_max=30,
+    
+)
+
+fig.update_layout(
+    title=dict(
+        text="<span style='color:blue;font-weight:bold;'>팔머펭귄</span>",  # HTML 태그를 문자열로 처리
+        x=0.5, 
+        xanchor='center',
+        yanchor='top'
+    )
+)
+```
+
+## Row {height=30%}
+
+```{python}
+
+```
+
+```{python}
+```
+
+
+# 코드북
+
+여기는 페이지 2
+
+## Row 
+
+```{python}
+
+value = 100
+spam_num=300
+comments=50
+
+```
+
+
+```{python}
+#| content: valuebox
+#| title: "Spam per day"
+dict(
+  icon = "trash",
+  color = "danger",
+  value = spam_num
+)
+```
+
+
+---
+title: "구해줘 남Q의 홈"
+author: "whaleshark"
+format: 
+  dashboard:
+    logo: move.gif
+    nav-buttons:
+      - reddit
+      - icon: gitlab
+        href: https://github.com/nebuss/LSbigdata-project1
+---
+
+
+# 에임스 정보
+###  테스트1 {.tabset}
+
+```{python}
+import plotly.express as px
+
+
+# 데이터 로드
+penguins = pd.read_csv('data/penguins.csv')
+
+from itables import show
+show(penguins, buttons = ['copy', 'excel', 'pdf'])
+
+
+```
+
+::: {.card title="My Title"}
+카드안에 ㄷ들어있는 텍스트입니다.
+![팔머펭귄](penguins.png)
+:::
+
+
+## Row {height=70%}
+
+```{python}
+import plotly.express as px
+import pandas as pd
+import numpy as np
+
+
+penguins = pd.read_csv('data/penguins.csv')
+penguins.head()
+
+fig = px.scatter(
+    penguins,
+    x="bill_length_mm",
+    y="bill_depth_mm",
+    color="species",
+    size_max=30,
+    
+)
+
+fig.update_layout(
+    title=dict(
+        text="<span style='color:blue;font-weight:bold;'>팔머펭귄</span>",  # HTML 태그를 문자열로 처리
+        x=0.5, 
+        xanchor='center',
+        yanchor='top'
+    )
+)
+```
+
+## Row {height=30%}
+
+```{python}
+
+```
+
+```{python}
+```
+
+
+# 매물선택
+여기는 페이지 3
+
+## Row 
+
+```{python}
+
+```
+
+
+
+
+
+# 매입적기
+
+여기는 페이지 4
+
+## Row 
+
+```{python}
+
+```
